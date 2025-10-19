@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <section id="seccion">
+    <h1>¡solicitud de cita!</h1>
+    <form action="sutmi">
+        <input type="nombre" name="nombre" id="nombre" placeholder="nombre"
+        required>
+         <input type="apellido" name="apellido" id="apellido" placeholder="apellido"
+        required>
+         <input type="telefono" name="telefono" id="telefono" placeholder="telefono"
+        required>
+         <input type="e-mail" name="e-mail" id="e-mail" placeholder="e-mail"
+        required>
+        <!--tipos de pacientes privados, asegurados y turista de salud-->
+        <select name="tipopaciente" id="tipopaciente" required>
+            <option value="" disabled selected>tipo de pacientes</option>
+            <option value="privado">privado</option>
+            <option value="asegurado">asegurado</option>
+            <option value="turista">turista sw salud</option>
+        </select>
+
+        <!-- tanda-->
+        <select name="ars" id="ars" required>
+            <option value=""disabled selected>ars</option>
+            <option value="reserva">reserva</option>
+            <option value="popular">popular</option>
+            <option value="primera">primera</option>
+            <option value="renacer">renacer</option>
+        </select>
+        <select name="tanda" id="tanda" required>
+            <option value=""disabled selected>elegir la tanda</option>
+            <option value="mañana">mañana</option>
+            <option value="tarde">tarde</option>
+            
+        </select>
+        <select name="centro" id="centro" required>
+            <option value=""disabled selected>celecione el centro</option>
+            <option value="mameye">mameye</option>
+            <option value="san carlos">san carlos</option>
+            <option value="gascue">gascue</option>
+            <option value="el millo1">el millon1</option>
+        </select>
+
+    </form>
+
+ </section>   
+</body>
+</html>
